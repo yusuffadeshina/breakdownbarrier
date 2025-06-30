@@ -1,0 +1,366 @@
+*{
+	box-sizing: border-box;
+}
+.mobile-parents{
+	display: none;
+}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color:#391969;
+	padding: 15px 30px;
+	color: var(--bg--text-black100);
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	max-width: 100%;
+	top: 0;
+
+  }
+  .links{
+	display: flex;
+	justify-content: space-evenly;
+  }
+  
+   .links .about-us{
+	border: 1px solid rgb(71, 70, 64);
+	padding: 10px 10px;
+	background-color:  rgb(71, 70, 64);
+	border-radius: 10px;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+	
+  }
+  .links .about-us:hover{
+	opacity: 0;
+  }
+   .links .caseStudy{
+	border: 1px solid rgb(71, 70, 64);
+	padding: 10px 10px;
+	background-color:  rgb(71, 70, 64);
+	border-radius: 10px;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+	
+  }
+  .links .caseStudy:hover{
+	opacity: 0.7;
+  }
+   .links .Contact{
+	border: 1px solid rgb(71, 70, 64);
+	padding: 10px 10px;
+	background-color:  rgb(71, 70, 64);
+	border-radius: 10px;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+	
+  }
+  .links .Contact:hover{
+	opacity: 0.7;
+  }
+   .links .meetTeam{
+	border: 1px solid rgb(71, 70, 64);
+	padding: 10px 10px;
+	background-color:  rgb(71, 70, 64);
+	border-radius: 10px;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+	
+  }
+  .links .meetTeam:hover{
+	opacity: 0.7;
+  }
+  .impact{
+border: 1px solid rgb(71, 70, 64);
+	padding: 10px 10px;
+	background-color:  rgb(71, 70, 64);
+	border-radius: 10px;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+	
+  }
+  .impact:hover{
+opacity: 0.7;
+  }
+  .navbar img{
+	width:60px;
+	height:60px;
+	object-fit: cover;
+	cursor: pointer;
+  }
+  
+  
+  .logo {
+	font-size: 16px;
+	font-weight: 500;
+	color:var(--bg-text-purple-200);
+	cursor: pointer;
+	line-height: 1.5;
+	font-family: Italianno;
+	
+  }
+  
+  .logo-container {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+  }
+
+  
+  .nav-links {
+	display: flex;
+	list-style: none;
+	transition: transform 0.3s ease-out;
+  }
+  
+  .nav-links li {
+	margin-left: 25px;
+  }
+  
+  .nav-links a {
+	color: var(--bg--text-black100);
+	text-decoration: none;
+	/*font-size: 16px;*/
+	transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+	color: #ffa500;
+  }
+  .menu-icons {
+	
+	align-items: center;
+	display: none;
+  }
+  
+
+.caseStudies{
+	display: flex;
+	min-height: 100vh;
+	background-image: url(low-poly-grid-haikei.svg);
+	background-size: cover;
+	width: 100%;
+	flex: 0 0 100%;
+	box-sizing: border-box;
+	z-index: 78;
+	position: relative;
+	top: 89px;
+}
+.container {
+	display: flex;
+	flex-wrap: wrap; /* important: allow wrapping */
+	gap: 20px;
+	padding: 20px;
+	  margin-top:100px;
+	  width: 100%;
+  }
+  
+  .box-1, .box-2 {
+	flex: 1 1 48%; /* two boxes side-by-side with some gap */
+	background: white;
+	border-radius: 30px;
+	overflow: hidden;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .content {
+	font-size: 1.2rem;
+	text-align: center;
+	font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  }
+  
+  .content img {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-bottom: 20px;
+  }
+  
+  .content h3 {
+	font-weight: 800;
+	font-size: 30px;
+	color: gold;
+	margin: 20px 0 10px 0;
+  }
+  
+  .content p {
+	line-height: 1.8;
+  }
+  .quality, .empowerment{
+	  color: goldenrod;
+  }
+  .testimony-container{
+	display: flex;
+	justify-content: flex-end;
+  }
+
+  .testimony-card {
+	position: relative;
+	width: 100%;
+	max-width: 80%;
+	background-color: purple;
+	border-radius: 1rem;
+	padding: 2rem;
+	box-shadow: 0 4px 20px purple;
+  }
+  .testimony-card:hover{
+	/*transform: scale(1.03); /* Slight pop */
+	box-shadow: 0 8px 20px var(--bg-text-purple-300);
+  }
+
+  .comment-icon {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	color: gold;
+	font-size: 1.5rem;
+  }
+
+  .testimony-text {
+	font-size: 1.1rem;
+	
+	line-height: 1.6;
+  }
+  .supported-by {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 20px;
+	position: relative;
+	right: -200px;
+  }
+
+  .card {
+	background-color: #ffffff;
+	border-radius: 16px;
+	padding: 20px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	max-width: 300px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .card p {
+	font-size: 1.2rem;
+	color: #555;
+	margin-bottom: 20px;
+	font-weight: 600;
+  }
+
+  .logo {
+	width: 100%;
+	max-width: 150px;
+	height: auto;
+	object-fit: contain;
+  }
+  .mini-footer{
+	display: flex;
+	justify-content: center;
+
+
+  }
+    .partner{
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	font-weight: 800;
+	font-family: Poppins;
+	font-size: 25px;
+	color: gold;
+  }
+  @media (max-width: 768px) {
+	.links{
+		display: none;
+	}
+  .menu-icons {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  /* Style mobile menu when active */
+  .mobile-parents.show {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px;
+    height: 350px;
+  }
+
+  .exit-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .exit-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    color:black;
+  }
+
+  .mobile-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px; /* space under the exit icon */
+  }
+
+  .mobileNavs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobileNavs li {
+    margin: 10px 0;
+  }
+  .caseStudies{
+	top: 0;
+  }
+}
+@media (max-width: 425px) {
+  .supported-by {
+    flex-direction: column;        /* Stack cards vertically */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 10px;
+    right: 0;                      /* ❌ Remove the -200px shift */
+  }
+
+  .card {
+    max-width: 90%;               /* Let card scale to screen width */
+    padding: 15px;
+  }
+
+  .partner {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .logo {
+    max-width: 120px;
+  }
+}
+
+

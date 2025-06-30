@@ -1,0 +1,373 @@
+*{
+	box-sizing: border-box;
+}
+.mobile-parents{
+	display: none;
+}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color:#391969;
+	padding: 15px 30px;
+	color: var(--bg--text-black100);
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	max-width: 100%;
+	top: 0;
+
+  }
+  .links{
+	display: flex;
+	justify-content: space-evenly;
+  }
+  
+   .links .about-us{
+	border: 1px solid rgb(71, 70, 64);
+	padding: 10px 10px;
+	background-color:  rgb(71, 70, 64);
+	border-radius: 10px;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+	
+  }
+  .links .about-us:hover{
+	opacity: 0;
+  }
+   .links .caseStudy{
+	border: 1px solid rgb(71, 70, 64);
+	padding: 10px 10px;
+	background-color:  rgb(71, 70, 64);
+	border-radius: 10px;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+	
+  }
+  .Impact{
+border: 1px solid rgb(71, 70, 64);
+	padding: 10px 10px;
+	background-color:  rgb(71, 70, 64);
+	border-radius: 10px;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+	
+  }
+  .impact:hover{
+    	opacity: 0.7;
+  }
+  .links .caseStudy:hover{
+	opacity: 0.7;
+  }
+   .links .Contact{
+	border: 1px solid rgb(71, 70, 64);
+	padding: 10px 10px;
+	background-color:  rgb(71, 70, 64);
+	border-radius: 10px;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+	
+  }
+  .links .Contact:hover{
+	opacity: 0.7;
+  }
+   .links .meetTeam{
+	border: 1px solid rgb(71, 70, 64);
+	padding: 10px 10px;
+	background-color:  rgb(71, 70, 64);
+	border-radius: 10px;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+	
+  }
+  .links .meetTeam:hover{
+	opacity: 0.7;
+  }
+  .navbar img{
+	width:60px;
+	height:60px;
+	object-fit: cover;
+	cursor: pointer;
+  }
+  
+  
+  .logo {
+	font-size: 16px;
+	font-weight: 500;
+	color:var(--bg-text-purple-200);
+	cursor: pointer;
+	line-height: 1.5;
+	font-family: Italianno;
+	
+  }
+  
+  .logo-container {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+  }
+
+  
+  .nav-links {
+	display: flex;
+	list-style: none;
+	transition: transform 0.3s ease-out;
+  }
+  
+  .nav-links li {
+	margin-left: 25px;
+  }
+  
+  .nav-links a {
+	color: var(--bg--text-black100);
+	text-decoration: none;
+	/*font-size: 16px;*/
+	transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+	color: #ffa500;
+  }
+  .menu-icons {
+	
+	align-items: center;
+	display: none;
+  }
+  .impactful{
+    display: flex;
+    background-image: url(https://images.pexels.com/photos/159213/hall-congress-architecture-building-159213.jpeg);
+      background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  z-index: 10;
+ position: relative;
+  top: 93px;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  flex: 0 0 100%;
+  gap: 20px;
+  }
+
+  
+  
+  .testimonial{
+    
+  text-align: center;
+    color: purple;
+     font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:900;
+  font-style: normal;
+    font-size: 4rem;
+  
+  
+  }
+  .review{
+  display: flex;
+    margin-right: auto;
+    margin-left: auto;
+     font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 700px;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 1.4px;
+   position: relative;
+  
+  }
+  .review::before {
+  content: "";
+  position: absolute;
+  top: -20px; /* position above the review box */
+  right: 95%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent white transparent; /* triangle pointing down */
+}
+.user{
+  
+  position: relative;
+  left: 300px;
+  font-size: 1.9rem;
+  color: white;
+}
+.cpd, .second-cpd {
+  flex: 1 1 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.cpd-impact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(253, 215, 1);
+   font-family: "Neuton", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 4rem;
+  line-height: 2;
+
+}
+.impact-img{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+ /* position: absolute;*/
+}
+.impact-img .img{
+width: 200px;
+height: 200px;
+}
+  @media (max-width: 1024px) {
+  .impactful {
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .cpd, .second-cpd {
+    flex: 1 1 100%;
+    padding: 15px 10px;
+    text-align: center;
+  }
+
+  .review {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .testimonial {
+    font-size: 2.5rem;
+  }
+
+  .impact-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .impact-img .img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .user {
+    left: 0;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .impactful {
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+  
+  }
+
+  .cpd, .second-cpd {
+    flex: 1 1 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .review {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .testimonial {
+    font-size: 2rem;
+  }
+
+  .impact-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .impact-img .img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .user {
+    left: 0;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+	.links{
+		display: none;
+	}
+  .menu-icons {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+.review::before{
+  display: none;
+}
+  /* Style mobile menu when active */
+  .mobile-parents.show {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px;
+    height: 350px;
+  }
+
+  .exit-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .exit-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+  }
+
+  .mobile-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px; /* space under the exit icon */
+  }
+
+  .mobileNavs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobileNavs li {
+    margin: 10px 0;
+  }
+}
